@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Κάρτες με Εφέ Flip</title>
+    <style>
+        .product-card {
+            width: 300px; /* Adjust as needed */
+            height: 400px; /* Adjust as needed */
+            perspective: 1000px; /* For 3D effect */
+        }
+
+        .product-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            transition: transform 0.8s ease-in-out; /* Αλλαγή του timing function */
+        }
+
+        .product-card:hover .product-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .product-card-front, .product-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden; /* Hide back side */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .product-card.flipped .product-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .product-card-front {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Κάθετα στο κέντρο */
+            align-items: center; /* Οριζόντια στο κέντρο */
+        }
+
+        .product-card-front img {
+            max-width: 100%; /* Η εικόνα να μην ξεπερνά το μέγεθος της κάρτας */
+            max-height: 80%; /* Αφήνουμε χώρο για τον τίτλο */
+        }
+
+        .product-card-front h3 {
+            margin-top: 10px; /* Αποσύνδεση του τίτλου από την εικόνα */
+        }
+
+        .product-card-back {
+            background-color: #e9e7e7; /* Λευκό φόντο */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ελαφριά σκιά */
+            text-align: center; /* Κείμενο στο κέντρο */
+        }
+
+        .product-card-back p {
+            font-size: 14px;
+            line-height: 1.5; /* Καλύτερη αναγνωσιμότητα */
+            margin-bottom: 20px;
+        }
+
+        .product-card-front {
+            background-color: #f0f0f0; /* Example color */
+        }
+
+        .product-card-back {
+            background-color: #f7f7f7; /* Example color */
+            transform: rotateY(180deg);
+        }
+
+        .product-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff; /* Example color */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+
+    <script>
+        // const productCards = document.querySelectorAll('.product-card');
+
+        // productCards.forEach(card => {
+        //     card.addEventListener('mouseenter', () => {
+        //         card.classList.add('flipped');
+        //     });
+
+        //     card.addEventListener('mouseleave', () => {
+        //         card.classList.remove('flipped');
+        //     });
+        // });
+
+    </script>
+</head>
+<body>
+    <div class="product-card">
+    <div class="product-card-inner">
+        <div class="product-card-front">
+            <img src="images/technology-8280863_1280.jpg" alt="Product 1">
+            <h3>Λογισμικό Κυβερνοασφάλειας</h3>
+        </div>
+        <div class="product-card-back">
+            <p>Σύντομη περιγραφή του προϊόντος 1. Κείμενο, κείμενο, κείμενο.</p>
+            <a href="product1.html" class="product-button">Περισσότερα</a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

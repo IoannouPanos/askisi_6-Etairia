@@ -1,0 +1,150 @@
+
+body {
+    background-color: #cdd9e5; /* Θέτει το χρώμα φόντου του σώματος */
+}
+h1 {
+    color: #343a40; /* Θέτει το χρώμα του κειμένου του τίτλου */
+}
+form {
+    background-color: #ffffff; /* Θέτει το χρώμα φόντου της φόρμας */
+    padding: 20px; /* Προσθέτει εσωτερικό περιθώριο */
+    border-radius: 10px; /* Στρογγυλοποιεί τις γωνίες */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Προσθέτει σκιά */
+}
+button {
+    background-color: #007bff; /* Θέτει το χρώμα φόντου του κουμπιού */
+    border: none; /* Αφαιρεί τα περιγράμματα */
+    transition: background-color 0.3s; /* Ορίζει τη διάρκεια του εφέ αλλαγής χρώματος */
+}
+button:hover {
+    background-color: #0056b3; /* Θέτει το χρώμα φόντου του κουμπιού κατά το αιώρημα */
+}
+.whiteletter {
+    color: antiquewhite; /* Θέτει το χρώμα του κειμένου */
+    font-weight: bolder; /* Κάνει το κείμενο έντονο */
+}
+
+/* -----------------ΚΑΡΤΕΣ ΑΞΙΩΝ-------------------------- */
+
+.card-container {
+    display: flex; /* Χρησιμοποιεί flexbox για τη διάταξη των καρτών */
+}
+
+.card {
+    width: 25rem; /* Θέτει το πλάτος της κάρτας */
+    margin: 20px; /* Προσθέτει εξωτερικό περιθώριο */
+    transition: transform 0.3s ease-in-out; /* Ορίζει τη διάρκεια και τη μετάβαση κατά το αιώρημα */
+}
+.card:hover {
+    transform: scale(1.1); /* Μεγεθύνει την κάρτα κατά 10% κατά το αιώρημα */
+}
+
+/* -----------------ΚΑΡΤΕΣ ΑΞΙΩΝ----- ΤΕΛΟΣ------------------ */
+ /* ----------------- NAVIGATION MENU------------------------ */
+ 
+.navbar-brand { 
+    color: black !important; /* Θέτει το χρώμα του κειμένου στην επωνυμία (company name) */
+    font-size: 2rem; /* Θέτει το μέγεθος γραμματοσειράς */
+    font-weight: bolder; /* Κάνει το κείμενο έντονο */
+}
+.nav-link { 
+    font-weight: bolder; /* Κάνει το κείμενο του μενού έντονο */
+}
+
+ /* ----------------- NAVIGATION MENU------------------------ */
+/* ------------------- SLIDER ΑΡΧΗ--------------------------- */
+
+.carousel {
+    max-height: 500px; /* Θέτει το μέγιστο ύψος του carousel */
+}
+.carousel-inner {
+    max-height: 500px; /* Θέτει το μέγιστο ύψος του εσωτερικού carousel */
+}
+.carousel-item img {
+    max-height: 500px; /* Θέτει το μέγιστο ύψος των εικόνων του carousel */
+    object-fit: cover; /* Καλύπτει την περιοχή της εικόνας */
+}
+.carousel-caption {
+    display: flex; /* Χρησιμοποιεί flexbox για τη διάταξη */
+    flex-direction: column; /* Θέτει τη διάταξη σε στήλη */
+    justify-content: center; /* Κεντράρει το περιεχόμενο κάθετα */
+    align-items: center; /* Κεντράρει το περιεχόμενο οριζόντια */
+    height: 40%; /* Θέτει το ύψος */
+    text-align: center; /* Κεντράρει το κείμενο */
+}
+.card-container h2 {
+    font-size: 4.5rem; /* Θέτει το μέγεθος γραμματοσειράς των τίτλων */
+}
+.carousel-caption p {
+    font-size: 1.5rem; /* Θέτει το μέγεθος γραμματοσειράς των παραγράφων */
+}
+.carousel-item {
+    transition: transform 1.2s ease-in-out; /* Ορίζει τη διάρκεια και τη μετάβαση */
+}
+
+/* -------------------SLIDER----ΤΕΛΟΣ----------------------------- */
+/* ----------------PRODUCTS CARDS FLIP ΑΡΧΗ------------------------ */
+
+.product-container {
+    display: flex; /* Χρησιμοποιεί flexbox για τη διάταξη των καρτών προϊόντων */
+    flex-wrap: wrap; /* Επιτρέπει την περιτύλιξη των καρτών */
+    justify-content: center; /* Κεντράρει τις κάρτες οριζόντια */
+    gap: 20px; /* Προσθέτει κενό μεταξύ των καρτών */
+}
+.product-card {
+    width: 240px; /* Θέτει το πλάτος των καρτών προϊόντων */
+    height: 400px; /* Θέτει το ύψος των καρτών προϊόντων */
+    perspective: 1000px; /* Προσθέτει προοπτική για το flip εφέ */
+}
+.product-card-inner {
+    position: relative; /* Χρησιμοποιεί σχετική τοποθέτηση */
+    width: 100%; /* Θέτει το πλάτος στο 100% του γονικού στοιχείου */
+    height: 100%; /* Θέτει το ύψος στο 100% του γονικού στοιχείου */
+    transition: transform 0.8s ease-in-out; /* Ορίζει τη διάρκεια και τη μετάβαση */
+    transform-style: preserve-3d; /* Διατηρεί το 3D εφέ */
+}
+.product-card:hover .product-card-inner {
+    transform: rotateY(180deg); /* Περιστρέφει την κάρτα κατά 180 μοίρες στον άξονα Y κατά το αιώρημα */
+}
+.product-card-front, .product-card-back {
+    position: absolute; /* Τοποθετεί τις όψεις απόλυτα μέσα στο container */
+    width: 100%; /* Θέτει το πλάτος στο 100% του container */
+    height: 100%; /* Θέτει το ύψος στο 100% του container */
+    backface-visibility: hidden; /* Κρύβει την πίσω όψη όταν είναι γυρισμένη */
+    display: flex; /* Χρησιμοποιεί flexbox για την ευθυγράμμιση του περιεχομένου */
+    flex-direction: column; /* Θέτει τη διάταξη του περιεχομένου σε στήλη */
+    justify-content: center; /* Κεντράρει το περιεχόμενο κάθετα */
+    align-items: center; /* Κεντράρει το περιεχόμενο οριζόντια */
+}
+.product-card-front {
+    background-color: #cbdaff; /* Θέτει το χρώμα φόντου της μπροστινής όψης */
+}
+.product-card-front img {
+    max-width: 100%; /* Θέτει το πλάτος της εικόνας στο 100% της κάρτας */
+    max-height: 80%; /* Θέτει το ύψος της εικόνας στο 80% της κάρτας */
+}
+.product-card-front h3 {
+    margin-top: 10px; /* Προσθέτει εξωτερικό περιθώριο στην κορυφή του τίτλου */
+}
+.product-card-back {
+    background-color: #e3def3; /* Θέτει το χρώμα φόντου της πίσω όψης */
+    padding: 20px; /* Προσθέτει εσωτερικό περιθώριο */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Προσθέτει ελαφριά σκιά */
+    text-align: center; /* Κεντράρει το κείμενο */
+    transform: rotateY(180deg); /* Περιστρέφει την πίσω όψη κατά 180 μοίρες */
+}
+.product-card-back p {
+    font-size: 14px; /* Θέτει το μέγεθος γραμματοσειράς */
+    line-height: 1.5; /* Θέτει το ύψος γραμμής */
+    margin-bottom: 20px; /* Προσθέτει εξωτερικό περιθώριο στο κάτω μέρος */
+}
+.product-button {
+    display: inline-block; /* Εμφανίζει το κουμπί ως στοιχείο σε σειρά */
+    padding: 10px 20px; /* Προσθέτει εσωτερικό περιθώριο */
+    background-color: #085cb7; /* Θέτει το χρώμα φόντου του κουμπιού */
+    color: white; /* Θέτει το χρώμα κειμένου του κουμπιού */
+    text-decoration: none; /* Αφαιρεί τις υπογραμμίσεις από το κουμπί */
+    border-radius: 5px; /* Στρογγυλοποιεί τις γωνίες */
+        
+}
+/* ----------------PRODUCTS CARDS FLIP ΤΕΛΟΣ-------------------------- */

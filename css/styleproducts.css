@@ -1,0 +1,97 @@
+body {
+    background-color: #cdd9e5; /* Θέτει το χρώμα φόντου του σώματος */
+}
+/* h1 {
+    color: #343a40; Θέτει το χρώμα του κειμένου του τίτλου
+} */
+
+/* ----------------- NAVIGATION MENU------------------------ */
+ 
+.navbar-brand { 
+    color: black !important; /* Θέτει το χρώμα του κειμένου στην επωνυμία (company name) */
+    font-size: 2rem; /* Θέτει το μέγεθος γραμματοσειράς */
+    font-weight: bolder; /* Κάνει το κείμενο έντονο */
+}
+.nav-link { 
+    font-weight: bolder; /* Κάνει το κείμενο του μενού έντονο */
+}
+
+ /* ----------------- NAVIGATION MENU------------------------ */
+
+
+
+
+
+
+ /* styleproducts.css */
+
+/* Γενικές ρυθμίσεις */
+body {
+    font-family: sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #f8f9fa; /* Ανοιχτό γκρι */
+    padding: 20px 0;
+}
+
+.header-content {
+    padding: 50px 0; /* Αύξηση του padding για μεγαλύτερο ύψος */
+    text-align: center; /* Κείμενο στο κέντρο */
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+}
+
+/* Κάρτες προϊόντων */
+.card {
+    border: 1px solid #dee2e6; /* Ανοιχτό γκρι περίγραμμα */
+    transition: transform 0.3s ease; /* Για το hover effect */
+    overflow: hidden; /* Για να κρύβονται οι εικόνες που είναι μεγαλύτερες */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Όλες οι κάρτες να έχουν το ίδιο ύψος */
+}
+
+.card img {
+    object-fit: cover; /* Οι εικόνες να καλύπτουν όλη την περιοχή */
+    height: 200px; /* Ύψος εικόνας */
+    width: 100%; /* Πλάτος εικόνας */
+}
+
+.card-body {
+    flex-grow: 1; /* Το card-body να μεγαλώνει για να γεμίσει το κενό */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Ελαφρύ zoom στο hover */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Ελαφριά σκιά στο hover */
+}
+
+/* Κουμπιά φίλτρων */
+.filter-btn {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Για το hover effect */
+}
+
+.filter-btn:hover {
+    background-color: #0d6efd; /* Μπλε στο hover */
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40; /* Σκούρο γκρι */
+}

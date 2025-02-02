@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styleproducts.css">
     <title>Προϊόντα</title>
 </head>
-<body>
+<body>  
     <header>
         <nav class="navbar navbar-expand-lg bg-primary">
             <div class="container-fluid">
@@ -18,116 +18,98 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link text-white active" href="index.html">Αρχική</a></li>
-                        <li class="nav-item"><a class="nav-link text-white active" href="aboutus.html">Σχετικά με Έμας</a></li>
+                        <li class="nav-item"><a class="nav-link text-white active" href="aboutus.html">Σχετικά με Εμάς</a></li>
                         <li class="nav-item"><a class="nav-link text-white active" href="products.html">Προϊόντα</a></li>
                         <li class="nav-item"><a class="nav-link text-white active" href="contact.html">Επικοινωνία</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="header-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="images/logo.png" alt="Logo" class="logo">
+    </header>
+
+    <!-- Πεδίο για το λογότυπο -->
+    <section class="logo-section text-center my-4">
+        <img src="images/logo.png" alt="Λογότυπο" class="logo-img">
+        <p class="logo-text">[Συμπλήρωσε το κείμενό σου εδώ]</p>
+    </section>
+
+    <div class="container mt-5">
+        <div class="d-flex justify-content-center mb-4">
+            <button class="btn filter-btn" data-category="all">Όλα</button>
+            <button class="btn filter-btn" data-category="asic">Λογισμικό Κυβερνοασφάλειας</button>
+            <button class="btn filter-btn" data-category="gpu">Υπηρεσίες Διαχείρισης Απειλών</button>
+            <button class="btn filter-btn" data-category="cloud">Cloud Security Solutions</button>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card product-card">
+                    <img src="images/product1.jpg" class="card-img-top product-img" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Pan Cyber Shield</h5>
+                        <p class="card-text">Ένα προηγμένο σύστημα firewall που συνδυάζει AI και Machine Learning.</p>
                     </div>
-                    <div class="col-md-6">
-                        <h1>Pan Cyber Security Solutions</h1>
-                        <p>Κείμενο που θέλετε να γράψετε</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card product-card">
+                    <img src="images/product2.jpg" class="card-img-top product-img" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Secure Vault</h5>
+                        <p class="card-text">Ένα λογισμικό κρυπτογράφησης που διασφαλίζει τα δεδομένα σας.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card product-card">
+                    <img src="images/product3.jpg" class="card-img-top product-img" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Παρακολούθηση 24/7</h5>
+                        <p class="card-text">Παρακολουθούμε συνεχώς τα δίκτυα σας, εξουδετερώνοντας απειλές.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </header><br>
 
-    <div style="position: relative; background-image: url('images/products.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"> 
-        <div class="container mt-5 pt-5" >
-            <div class="container my-4">
-                <div class="d-flex justify-content-center mb-4">
-                    <button class="btn btn-outline-primary mx-2 filter-btn" data-category="all">Όλα</button>
-                    <button class="btn btn-outline-primary mx-2 filter-btn" data-category="asic">Λογισμικό Κυβερνοασφάλειας</button>
-                    <button class="btn btn-outline-primary mx-2 filter-btn" data-category="gpu">Υπηρεσίες Διαχείρισης Απειλών και Ανάλυσης Κινδύνου</button>
-                    <button class="btn btn-outline-primary mx-2 filter-btn" data-category="cooling">Συμβουλευτικές Υπηρεσίες Κυβερνοασφάλειας</button>
-                    <button class="btn btn-outline-primary mx-2 filter-btn" data-category="cooling">Cloud Security Solutions</button>
-                    <button class="btn btn-outline-primary mx-2 filter-btn" data-category="cooling">AI-driven Ανίχνευση Απειλών</button>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+            <div class="col">
+                <div class="card product-card">
+                    <img src="images/product4.jpg" class="card-img-top product-img" alt="Product 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Penetration Testing</h5>
+                        <p class="card-text">Προληπτικός έλεγχος των συστημάτων για ανίχνευση κενών ασφαλείας.</p>
+                    </div>
                 </div>
+            </div>
 
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Pan Cyber Shield</h5>
-                                <p class="card-text">Ένα προηγμένο σύστημα firewall που συνδυάζει τεχνητή νοημοσύνη και μηχανική εκμάθηση (machine learning) για την ανίχνευση και τον αποκλεισμό ύποπτης δραστηριότητας.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-body-secondary">Λογισμικό Κυβερνοασφάλειας</small>
-                            </div>
-                        </div>
+            <div class="col">
+                <div class="card product-card">
+                    <img src="images/product5.jpg" class="card-img-top product-img" alt="Product 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Threat Intelligence</h5>
+                        <p class="card-text">Χρήση AI για ανάλυση και πρόβλεψη κυβερνοαπειλών.</p>
                     </div>
+                </div>
+            </div>
 
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Secure Vault</h5>
-                                <p class="card-text">Ένα λογισμικό κρυπτογράφησης που εξασφαλίζει ότι τα ευαίσθητα δεδομένα σας αποθηκεύονται με ασφάλεια.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-body-secondary">Λογισμικό Κυβερνοασφάλειας</small>
-                            </div>
-                        </div>
+            <div class="col">
+                <div class="card product-card">
+                    <img src="images/product6.jpg" class="card-img-top product-img" alt="Product 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Cloud Security</h5>
+                        <p class="card-text">Ασφαλείς υπηρεσίες backup και disaster recovery.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Παρακολούθηση 24/7</h5>
-                                <p class="card-text">Παρακολουθούμε συνεχώς τα δίκτυα σας, εντοπίζοντας και εξουδετερώνοντας απειλές σε πραγματικό χρόνο.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-body-secondary">Υπηρεσίες Διαχείρισης Απειλών</small>
-                            </div>
-                        </div>
-                    </div>
-                </div><br>
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>© 2025 Pan Cyber Security Solutions All Rights Reserved.</p>
+    </footer>
 
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Penetration Testing</h5>
-                                <p class="card-text">Προληπτικός έλεγχος των συστημάτων σας για να ανιχνευθούν κενά ασφαλείας.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-body-secondary">Υπηρεσίες Διαχείρισης Απειλών</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Threat Intelligence</h5>
-                                <p class="card-text">Χρήση τεχνολογιών τεχνητής νοημοσύνης για την πρόβλεψη και ανάλυση των κινήσεων κυβερνοεγκληματιών..</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-body-secondary">Υπηρεσίες Διαχείρισης Απειλών</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Συμβουλευτικές Υπηρεσίες Κυβερνοασφάλειας</h5>
-                                <p class="card-text">Η Pan Cyber Security Solutions αναλαμβάνει να σχεδιάσει και να υλοποιήσει στρατηγικές κυβερνοασφάλειας,
-                                    πλήρως προσαρμοσμένες στις ανάγκες της επιχείρησής σας.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-body-secondary">Συμβουλευτικές Υπηρεσίες Κυβερνοασφάλειας</small>
-                            </div>
-                        </div>
-                    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 body {
     background-color: #cdd9e5; /* Θέτει το χρώμα φόντου του σώματος */
+    font-family: sans-serif;
 }
 /* h1 {
     color: #343a40; Θέτει το χρώμα του κειμένου του τίτλου
@@ -26,14 +27,12 @@ body {
  /* styleproducts.css */
 
 /* Γενικές ρυθμίσεις */
-body {
-    font-family: sans-serif;
-}
+
 
 /* Header */
 header {
     background-color: #f8f9fa; /* Ανοιχτό γκρι */
-    padding: 20px 0;
+    /* padding: 20px 0; */
 }
 
 .header-content {

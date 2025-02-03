@@ -20,15 +20,15 @@ body {
  /* ----------------- NAVIGATION MENU------------------------ */
 
 /* ---------------Header---------------- */
-header {
-    background-color: #f8f9fa; /* Ανοιχτό γκρι */
-    /* padding: 20px 0; */
+/* header {
+    background-color: #f8f9fa; Ανοιχτό γκρι
+    padding: 20px 0;
 }
 .header-content {
-    padding: 50px 0; /* Αύξηση του padding για μεγαλύτερο ύψος */
-    text-align: center; /* Κείμενο στο κέντρο */
-}
-.logo {
+    padding: 50px 0; Αύξηση του padding για μεγαλύτερο ύψος
+    text-align: center; Κείμενο στο κέντρο
+} */
+/* .logo {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
@@ -39,7 +39,7 @@ header {
 }
 .header-content p {
     font-size: 1.2rem;
-}
+} */
 
 
 /* -----------------Κάρτες προϊόντων------------------------- */
@@ -80,4 +80,38 @@ header {
 /* Footer */
 footer {
     background-color: #343a40; /* Σκούρο γκρι */
+}
+
+
+.header {
+    background-image: url("images/products.jpg"); /* Φωτογραφία φόντου */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0; /* Αύξηση padding για μεγαλύτερο ύψος */
+    position: relative; /* Για τοποθέτηση του header-content */
+}
+
+.header-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Σκοτεινό φόντο για το κείμενο */
+    padding: 50px;
+    border-radius: 10px; /* Στρογγυλεμένες γωνίες για το πλαίσιο */
+}
+
+.logo {
+    width: 200px; /* Προσαρμόστε το μέγεθος του λογοτύπου */
+    height: auto;
+    border-radius: 10px; /* Στρογγυλεμένες γωνίες για το λογότυπο */
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-family: cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header h5 {
+    font-size: 1.2rem;
 }

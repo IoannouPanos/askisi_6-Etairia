@@ -42,17 +42,17 @@
                 <div class="container my-4">
                     <div class="d-flex justify-content-center mb-4">
                       <button class="btn btn-outline-primary mx-2 filter-btn" data-category="all">Όλα</button>
-                      <button class="btn btn-outline-primary mx-2 filter-btn" data-category="asic">Λογισμικό Κυβερνοασφάλειας</button>
-                      <button class="btn btn-outline-primary mx-2 filter-btn" data-category="gpu">Υπηρεσίες Διαχείρισης Απειλών και Ανάλυσης Κινδύνου</button>
-                      <button class="btn btn-outline-primary mx-2 filter-btn" data-category="cooling">Συμβουλευτικές Υπηρεσίες Κυβερνοασφάλειας</button>
-                      <button class="btn btn-outline-primary mx-2 filter-btn" data-category="cooling">Cloud Security Solutions</button>
-                      <button class="btn btn-outline-primary mx-2 filter-btn" data-category="cooling">AI-driven Ανίχνευση Απειλών</button>
+                      <button class="btn btn-outline-primary mx-2 filter-btn" data-category="software">Λογισμικό Κυβερνοασφάλειας</button>
+                      <button class="btn btn-outline-primary mx-2 filter-btn" data-category="danger-analisys">Υπηρεσίες Διαχείρισης Απειλών και Ανάλυσης Κινδύνου</button>
+                      <button class="btn btn-outline-primary mx-2 filter-btn" data-category="consultant">Συμβουλευτικές Υπηρεσίες Κυβερνοασφάλειας</button>
+                      <button class="btn btn-outline-primary mx-2 filter-btn" data-category="cloud">Cloud Security Solutions</button>
+                      <button class="btn btn-outline-primary mx-2 filter-btn" data-category="AI-driven">AI-driven Ανίχνευση Απειλών</button>
                     </div>
 
 <!-- -----------------PRODUCT CARDS------------------ -->
 
                 <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
+                    <div class="col" data-category="software">
                       <div class="card h-100">
                         <img src="images/pan cyber shield.jpg" class="card-img-top" alt="pan cyber shield">
                         <div class="card-body">
@@ -66,7 +66,7 @@
                       </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col" data-category="software">
                       <div class="card h-100">
                         <img src="images/Secure Vault.jpg" class="card-img-top" alt="secure Vault">
                         <div class="card-body">
@@ -80,7 +80,7 @@
                       </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col" data-category="danger-analisys">
                       <div class="card h-100">
                         <img src="images/Παρακολούθηση 24.7.jpg" class="card-img-top" alt="Παρακολούθηση">
                         <div class="card-body">
@@ -95,8 +95,8 @@
                     </div>
                   </div><br>
 
-                  <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
+                  <div class="row row-cols-1 row-cols-md-3 g-4" >
+                    <div class="col" data-category="danger-analisys">
                       <div class="card h-100">
                         <img src="images/Penetration Testing.jpg" class="card-img-top" alt="Penetration Testing">
                         <div class="card-body">
@@ -109,7 +109,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-category="danger-analisys">
                       <div class="card h-100">
                         <img src="images/Threat Intelligence.jpg" class="card-img-top" alt="Threat Intelligence">
                         <div class="card-body">
@@ -122,7 +122,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-category="consultant">
                       <div class="card h-100">
                         <img src="images/Συμβουλευτικές Υπηρεσίες Κυβερνοασφάλειας products.jpg" class="card-img-top" alt="Συμβουλευτικές Υπηρεσίες Κυβερνοασφάλειας">
                         <div class="card-body">
@@ -139,7 +139,7 @@
                   </div><br>
 
                   <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
+                    <div class="col" data-category="cloud">
                       <div class="card h-100">
                         <img src="images/Κρυπτογράφηση cloud δεδομένων.jpg" class="card-img-top" alt="Κρυπτογράφηση cloud δεδομένων">
                         <div class="card-body">
@@ -152,7 +152,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-category="cloud">
                       <div class="card h-100">
                         <img src="images/Έλεγχο ταυτότητας πολλαπλών παραγόντων (MFA).jpg" class="card-img-top" alt="Έλεγχο ταυτότητας πολλαπλών παραγόντων (MFA)">
                         <div class="card-body">
@@ -165,7 +165,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-category="cloud">
                       <div class="card h-100">
                         <img src="images/disaster-recovery.jpg" class="card-img-top" alt="disaster recovery">
                         <div class="card-body">
@@ -181,7 +181,7 @@
                   </div><br>
 
                   <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
+                    <div class="col" data-category="AI-driven">
                       <div class="card h-100">
                         <img src="images/AI-driven Ανίχνευση Απειλών products.jpg" class="card-img-top" alt="AI-driven Ανίχνευση Απειλών">
                         <div class="card-body">
@@ -212,5 +212,6 @@
             </div>
         </footer>    
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/filter.js"></script>
     </body>
 </html>

@@ -19,42 +19,30 @@ body {
 
  /* ----------------- NAVIGATION MENU------------------------ */
 
-
-
-
-
-
- 
-
-
-
-/* Header */
+/* ---------------Header---------------- */
 header {
     background-color: #f8f9fa; /* Ανοιχτό γκρι */
     /* padding: 20px 0; */
 }
-
 .header-content {
     padding: 50px 0; /* Αύξηση του padding για μεγαλύτερο ύψος */
     text-align: center; /* Κείμενο στο κέντρο */
 }
-
 .logo {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
-
 .header-content h1 {
     font-size: 3rem;
     margin-bottom: 10px;
 }
-
 .header-content p {
     font-size: 1.2rem;
 }
 
-/* Κάρτες προϊόντων */
+
+/* -----------------Κάρτες προϊόντων------------------------- */
 .card {
     border: 1px solid #dee2e6; /* Ανοιχτό γκρι περίγραμμα */
     transition: transform 0.3s ease; /* Για το hover effect */
@@ -79,7 +67,7 @@ header {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Ελαφριά σκιά στο hover */
 }
 
-/* Κουμπιά φίλτρων */
+/* ----------------Κουμπιά φίλτρων--------------- */
 .filter-btn {
     transition: background-color 0.3s ease, color 0.3s ease; /* Για το hover effect */
 }

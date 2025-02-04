@@ -12,7 +12,7 @@ body {
 /* ---------------logo---------------- */
 
 .header-content {
-    text-align: left;
+    text-align: left; /* στοιχίζει αριστερά το κέιμενο στο λογότυπο */
     padding: 10px;
     border-radius: 10px; /* Στρογγυλεμένες γωνίες για το πλαίσιο */
 }
@@ -21,13 +21,13 @@ body {
     width: 100px; /* Προσαρμόστε το μέγεθος του λογοτύπου */
     height: auto;
     border-radius: 50px; /* Στρογγυλεμένες γωνίες για το λογότυπο */
-    margin-bottom: 10px;
+    margin-bottom: 10px; /*Προσθέτει ένα κενό 10 pixel κάτω από το στοιχείο */
 }
 
 .header h1 {
-    font-family: cursive;
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-family: cursive; /* θα χρησιμοποιεί τη γραμματοσειρά cursive, δηλαδή μια καλλιγραφική γραμματοσειρά */
+    font-size: 3rem; /* Ορίζει το μέγεθος της γραμματοσειράς σε 3 rem */
+    margin-bottom: 10px; /*Προσθέτει ένα κενό 10 pixel κάτω από το στοιχείο */
 }
 
 .header h5 {

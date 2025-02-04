@@ -1,10 +1,9 @@
 
 body {
+    font-family: sans-serif;
     background-color: #cdd9e5; /* Θέτει το χρώμα φόντου του σώματος */
 }
-h1 {
-    color: #343a40; /* Θέτει το χρώμα του κειμένου του τίτλου */
-}
+
 form {
     background-color: #ffffff; /* Θέτει το χρώμα φόντου της φόρμας */
     padding: 20px; /* Προσθέτει εσωτερικό περιθώριο */
@@ -24,6 +23,32 @@ button:hover {
     font-weight: bolder; /* Κάνει το κείμενο έντονο */
 }
 
+/* ---------------logo---------------- */
+
+.header-content {
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px; /* Στρογγυλεμένες γωνίες για το πλαίσιο */
+}
+
+.logo {
+    width: 100px; /* Προσαρμόστε το μέγεθος του λογοτύπου */
+    height: auto;
+    border-radius: 50px; /* Στρογγυλεμένες γωνίες για το λογότυπο */
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-family: cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header h5 {
+    font-size: 1.5rem;
+}
+
+
 /* -----------------ΚΑΡΤΕΣ ΑΞΙΩΝ-------------------------- */
 
 .card-container {
@@ -42,13 +67,9 @@ button:hover {
 /* -----------------ΚΑΡΤΕΣ ΑΞΙΩΝ----- ΤΕΛΟΣ------------------ */
  /* ----------------- NAVIGATION MENU------------------------ */
  
-.navbar-brand { 
-    color: black !important; /* Θέτει το χρώμα του κειμένου στην επωνυμία (company name) */
-    font-size: 2rem; /* Θέτει το μέγεθος γραμματοσειράς */
-    font-weight: bolder; /* Κάνει το κείμενο έντονο */
-}
 .nav-link { 
     font-weight: bolder; /* Κάνει το κείμενο του μενού έντονο */
+    margin-right: 70px; /* Προσθέτει περιθώριο από τα δεξιά */
 }
 
  /* ----------------- NAVIGATION MENU------------------------ */

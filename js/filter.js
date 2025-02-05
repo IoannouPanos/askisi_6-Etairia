@@ -5,26 +5,31 @@ document.addEventListener("DOMContentLoaded", function () {
     // Επιλέγουμε όλα τα προϊόντα (κάρτες) που έχουν data-category
     const productCards = document.querySelectorAll(".col");
 
-    // Προσθέτουμε event listener σε κάθε κουμπί φίλτρου
+    // Συνάρτηση για φιλτράρισμα προϊόντων
+    function filterProducts(category) {
+        productCards.forEach((card) => {
+            if (category === "all") {
+                card.style.display = "block";
+            } else {
+                card.style.display = card.getAttribute("data-category") === category ? "block" : "none";
+            }
+        });
+    }
+
+    // Διαβάζουμε το query parameter από το URL
+    const params = new URLSearchParams(window.location.search);
+    const categoryFromURL = params.get("category");
+
+    // Αν υπάρχει κατηγορία στο URL, εφαρμόζουμε το φιλτράρισμα
+    if (categoryFromURL) {
+        filterProducts(categoryFromURL);
+    }
+
+    // Προσθέτουμε event listener στα κουμπιά φίλτρων
     filterButtons.forEach((button) => {
         button.addEventListener("click", function () {
-            // Παίρνουμε την κατηγορία που επιλέχθηκε από το data-category
             const category = button.getAttribute("data-category");
-
-            // Ελέγχουμε όλα τα προϊόντα και εμφανίζουμε ή κρύβουμε ανάλογα με την επιλογή
-            productCards.forEach((card) => {
-                if (category === "all") {
-                    // Αν επιλεγεί "Όλα", εμφανίζουμε όλες τις κάρτες
-                    card.style.display = "block";
-                } else {
-                    // Διαφορετικά, εμφανίζουμε μόνο τις κάρτες που ταιριάζουν στην κατηγορία
-                    if (card.getAttribute("data-category") === category) {
-                        card.style.display = "block";
-                    } else {
-                        card.style.display = "none";
-                    }
-                }
-            });
+            filterProducts(category);
         });
     });
 });
